@@ -45,7 +45,7 @@ def devolver_um_veiculo():
         mostrar_lista_de_veiculos(veiculos_alugados)
         print('Escolha o código do carro que deseja devolver:')
         codigo_veiculo_devolucao = int(input())
-        if confirmacao == 0:
+        if codigo_veiculo_devolucao == 0:
             print(f'Obrigado por devolver o veículo {veiculos_alugados[codigo_veiculo_devolucao][0]}')
             veiculos_disponiveis.append(veiculos_alugados.pop(codigo_veiculo_devolucao))
 
