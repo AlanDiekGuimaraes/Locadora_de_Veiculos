@@ -12,14 +12,23 @@ veiculos_disponiveis = [
     ]
 veiculos_alugados =[]
 
-print(50 * '-')
-print('Bem vindo a locadora BR')
-print(50 * '-')
-
 def mostrar_lista_de_veiculos(lista_de_veiculos):
     lista_de_veiculos_ordenada = sorted(lista_de_veiculos)
     for contador, veiculos in enumerate(lista_de_veiculos_ordenada):
         print(f'[{contador}] {veiculos[0]} - R$ {veiculos[1]} por dia.')
 
-mostrar_lista_de_veiculos(veiculos_disponiveis)
+print(68 * '-')
+print('Bem vindo a locadora BR'.center(68))
+print(68 * '-')
+
+while True:
+
+    print('O que deseja fazer?'.center(68).upper())
+    print('0 - Mostrar portfolio | 1 - Alugar um veículo | 2 - Devolver um veículo')
+    try:
+        operacao = int(input())
+    except:
+        print('ERRO, você digitou algum valor invalido!'.center(68))
+
+
 
